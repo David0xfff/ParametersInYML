@@ -1,7 +1,15 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
 parameters:
 - name: myStage
   type: string
-  default: 'Etapas/Stage'
+  default: 'Etapas_Stage'
 - name: myJob
   type: string
   default: 'Job1'

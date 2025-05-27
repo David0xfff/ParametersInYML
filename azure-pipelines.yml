@@ -1,13 +1,13 @@
 parameters:
 - name: myStage
   type: string
-  default: 'Etapas (Stage)'
+  default: 'Etapas(Stage)'
 - name: myJob
   type: string
   default: 'Job1'
 - name: myString
   type: string
-  default: 'Valor por defecto'
+  default: 'ValorPorDefecto'
 - name: mynum
   displayName: 'My numero de parametro'
   type: number

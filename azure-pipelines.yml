@@ -20,7 +20,16 @@ parameters:
   displayName: 'MyNumeroDeParametro'
   type: number
   default: 123
-  
+
+- name: miOpcionDeEntorno # Este es el nombre "interno" para los desarrolladores
+  displayName: 'Elige tu Entorno de Despliegue' # ¡Esto es lo que tú verías!
+  type: string # Indica que es un tipo de "texto"
+  default: 'Desarrollo' # El valor que se usa si no eliges nada
+  values: # Las opciones que puedes seleccionar
+    - 'Desarrollo'
+    - 'Pruebas'
+    - 'Producción'
+
 stages:
 - stage: ${{ parameters.myStage }}
   jobs: 
